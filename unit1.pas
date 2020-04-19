@@ -13,7 +13,10 @@ type
 
   TForm1 = class(TForm)
     Button1: TButton;
+    eNama: TEdit;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
   private
 
   public
@@ -31,7 +34,12 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  showmessage('Hello World');
+  showmessage('Hello '+eNama.text);
+end;
+
+procedure TForm1.Label1Click(Sender: TObject);
+begin
+
 end;
 
 end.
